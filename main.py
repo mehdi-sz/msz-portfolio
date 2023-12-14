@@ -11,7 +11,7 @@ profile_pic = current_dir / "assets" / "profile-pic.png"
 resume_file = current_dir / "assets" / "msz.pdf"
 # ## Paramètre généraux du projet
 PAGE_TITLE = "Mehdi Zayani | Ingénieur Logiciel"
-PAGE_ICON = ":wave:"
+PAGE_ICON = "wave"
 NAME = "Mehdi Zayani"
 DESCRIPTION = """
 Expert Full-Stack aguerri, je mets en œuvre ma créativité technique pour des solutions innovantes.

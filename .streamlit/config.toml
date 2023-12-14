@@ -1,0 +1,12 @@
+[theme]
+# couleur primaire pour les elements.
+primaryColor = "#57cc99"
+
+# couleur d'arrière plan pour le contenu.
+backgroundColor = "#002b36"
+
+# couleur d'arriere plan secondaire.
+secondaryBackgroundColor = "#586e75"
+
+# Coleur utilisée pour le text en général
+textColor = "#fff"
