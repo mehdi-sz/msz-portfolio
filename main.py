@@ -24,10 +24,12 @@ SOCIAL_MEDIA = {
     "Twitter": "https://twitter.com",
 }
 PROJECTS = {
-    "🏆 Développement & Réfactoring  d'API - Concéption - dévelppement  & refactoring de plusieurs api pour projet SaaS": "https://youtube.com",
-    "🏆 Création d'une soltion web et mobile pour la gestion de tri des déchet dans le batiment": "https://youtube.com",
-    "🏆 Mise en place d'un ERP - Développement de modules complémentaire en PHP ": "https://youtube.com",
-    "🏆 Fany - Une Application SaaS pour la location de services d'artistes en IDF": "https://youtube.com",
+    "🏆 Master 2, Manager de projets informatique": "https://youtube.com",
+    "🏆 Diplôme d'ingénierie en sciences appliquées": "https://youtube.com",
+    "🏆 Certification Google - Digital Marketing fundamentals ": "https://youtube.com",
+    "🏆 Certification Cisco - CCNA 1,2,3,4 ": "https://youtube.com",
+    "🏆 Toeic | Score  860 " :"",
+    "🏆 Certification FreeCodeCamp - WebDesign" : "",
 }
 
 
@@ -55,7 +57,7 @@ with col2:
         file_name=resume_file.name,
         mime="application/octet-stream",
     )
-    st.write("📫", EMAIL)
+    st.write("📮", EMAIL)
 
 # ## Liens vers les résaux sociaux
 st.write('\n')
@@ -65,13 +67,13 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 
 # ## QUALIFICATIONS  
 st.write('\n')
-st.subheader("Experience & Qulifications")
+st.subheader("Compétences")
 st.write(
     """
-- ✔️  Développement Full-Stack: Expertise dans JavaScript, Node.js, React/Angular, avec une capacité avérée à concevoir des architectures robustes.
-- ✔️  Gestion de Projet Agile: Chef de projet expérimenté, adeptes des méthodologies Agile/Scrum, assurant une livraison efficace et dans les délais.
-- ✔️  Communication Avancée: Excellentes compétences de communication pour collaborer efficacement avec les équipes et les parties prenantes, traduisant les besoins commerciaux en solutions techniques.
-- ✔️  Résolution Créative des Problèmes: Aptitude démontrée à résoudre des défis complexes de manière innovante, avec un engagement continu envers l'apprentissage des nouvelles technologies.
+- ✅  Développement Full-Stack: Expertise dans JavaScript, Node.js, React/Angular, avec une capacité avérée à concevoir des architectures robustes.
+- ✅  Gestion de Projet Agile: Chef de projet expérimenté, adeptes des méthodologies Agile/Scrum, assurant une livraison efficace et dans les délais.
+- ✅  Communication Avancée: Excellentes compétences de communication pour collaborer efficacement avec les équipes et les parties prenantes, traduisant les besoins commerciaux en solutions techniques.
+- ✅  Résolution Créative des Problèmes: Aptitude démontrée à résoudre des défis complexes de manière innovante, avec un engagement continu envers l'apprentissage des nouvelles technologies.
 """
 )
 
@@ -82,7 +84,29 @@ st.write(
     """
 - 👩‍💻 Programmation: Python,JAVA, Javascript, TS, JSX,React, Spring, Angular, Android, SQL, VBA
 - 📊 Visulisation de données: PowerBi, MS Excel,GraphQL, Plotly
-- 📚 App Dev: Android, React Native Flask Ionic
+- 📲 App Dev: Android, React Native Flask Ionic
 - 🗄️ Bases de données: Postgres, MongoDB, MySQL, Oracle, SQL Server
 """
 )
+# ## Expérience Professionnelle
+st.write('\n')
+st.subheader("Expérience Professionnelle")
+st.write("---")
+
+# ## Experience La Sacem
+st.write("🚧", "**Ingénieur d'études et développement | La Sacem**")
+st.write("007-2017 - 08-2018")
+st.write(
+    """
+- ► Conception et mise en œuvre d'applications robustes avec Java JEE, utilisant Oracle comme base de données.
+- ► Développement d'interfaces utilisateur interactives avec JavaScript et React pour une expérience utilisateur optimale.
+- ► Gestion complète du cycle de vie du développement, de la conception à la mise en production, pour des projets novateurs et réussis.
+"""
+)
+
+# --- Diplomes & certification---
+st.write('\n')
+st.subheader("Diplômes & Certificats")
+st.write("---")
+for project, link in PROJECTS.items():
+    st.write(f"[{project}]({link})")
