@@ -14,7 +14,7 @@ PAGE_TITLE = "Mehdi Zayani | Ingénieur Logiciel"
 PAGE_ICON = ":wave:"
 NAME = "Mehdi Zayani"
 DESCRIPTION = """
-Développeur FullStack, Chef de projets, Java JEE React Android.
+Expert Full-Stack aguerri, je mets en œuvre ma créativité technique pour des solutions innovantes.
 """
 EMAIL = "mehdi.zayani15@gmail.com"
 SOCIAL_MEDIA = {
@@ -56,3 +56,33 @@ with col2:
         mime="application/octet-stream",
     )
     st.write("📫", EMAIL)
+
+# ## Liens vers les résaux sociaux
+st.write('\n')
+cols = st.columns(len(SOCIAL_MEDIA))
+for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+    cols[index].write(f"[{platform}]({link})")
+
+# ## QUALIFICATIONS  
+st.write('\n')
+st.subheader("Experience & Qulifications")
+st.write(
+    """
+- ✔️  Développement Full-Stack: Expertise dans JavaScript, Node.js, React/Angular, avec une capacité avérée à concevoir des architectures robustes.
+- ✔️  Gestion de Projet Agile: Chef de projet expérimenté, adeptes des méthodologies Agile/Scrum, assurant une livraison efficace et dans les délais.
+- ✔️  Communication Avancée: Excellentes compétences de communication pour collaborer efficacement avec les équipes et les parties prenantes, traduisant les besoins commerciaux en solutions techniques.
+- ✔️  Résolution Créative des Problèmes: Aptitude démontrée à résoudre des défis complexes de manière innovante, avec un engagement continu envers l'apprentissage des nouvelles technologies.
+"""
+)
+
+# ## Compétences
+st.write('\n')
+st.subheader("Compétences Téchniques")
+st.write(
+    """
+- 👩‍💻 Programmation: Python,JAVA, Javascript, TS, JSX,React, Spring, Angular, Android, SQL, VBA
+- 📊 Visulisation de données: PowerBi, MS Excel,GraphQL, Plotly
+- 📚 App Dev: Android, React Native Flask Ionic
+- 🗄️ Bases de données: Postgres, MongoDB, MySQL, Oracle, SQL Server
+"""
+)
